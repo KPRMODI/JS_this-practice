@@ -51,7 +51,7 @@ const display = {
 // Problem 4
 
   function handleClick(text) {
-    console.log(this.text);
+    console.log(text);
   }
 
   document.getElementById("myBtn").onclick = function () {
@@ -59,8 +59,8 @@ const display = {
     handleClick(this.text);
   };
 
-  document.getElementById("myBtn").onclick =  () =>{
-    this.text = "Clicked!"
+  document.getElementById("myBtn2").onclick =  () =>{
+    this.text = "Clicked2!"
     handleClick(this.text);
   };
 
